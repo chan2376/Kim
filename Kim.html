@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <link href="Kim.css" rel="stylesheet">
+    <div class="pc">
+        <header id="pch">
+            최고존엄 김정일 동지 전시소
+        </header>
+        <body id="pcb">
+            <img src="2.jpg" class="img1" onclick="document.querySelector('.img1').style.width = '1500px';">
+            <img src="img_101342_1.jpg" class="img2" onclick="document.querySelector('.img2').style.width = '1500px';">
+            <img src="0.jpg" class="img3" onclick="document.querySelector('.img3').style.width = '1500px';">
+            <img src="072743e48f17d199.PNG" class="img4" onclick="document.querySelector('.img4').style.width = '1500px';">
+            <img src="1309FE244CA497CB2A.jpg" class="img5" onclick="document.querySelector('.img5').style.width = '1500px';">
+            <img src="htm_2011122111425m2602011.jpg" class="img6" onclick="document.querySelector('.img6').style.width = '1500px';">
+            <div class="text">김정일(1941~2011)동지는 우리 위대한 조선과 조선의 인민을 말아먹은 천하제일 씹새이시다<br>+저는 자유민주주의를 사랑하며 김정일 씹새를 좆나게 싫어합니다</div>
+        </body>
+    </div>
+    <div class="mob"> 
+    </div>
+    <script>
+        var ratio = window.devicePixelRatio
+        if (ratio >= 2){
+            document.querySelector('.pc').style.display = 'none';
+        }
+        else{
+            document.querySelector('.mob').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
