@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergay</title>
     <link rel="stylesheet" href="style.css">
+    <script src="passwird.js"></script>
 </head>
 <body>
+    <script>
+        var lock = 0;
+    </script>
     <div class="pc">
     <header id="pch">
         <span id="pcht">
@@ -27,6 +31,13 @@
                 <span class="dee">
                     아방궁
                 </span>
+             </a>
+             <br><br><br><br><br><br><br><br>
+             <a href="jung.html">
+                <span class="dea">
+                    박제소 2
+                </span>
+             </a>
         </div>
     <div class="psbb"></div>
      </a>
@@ -42,8 +53,11 @@
              <a href="Kim.html" class="jun">
                 전시소
              </a>
-             <a href="deep.html" class="ah">
+             <a href="deep.html" class="ahh">
                 아방궁
+             </a>
+             <a href="jung.html" class="ah">
+                전시소 2
              </a>
         </div>
     </div>
@@ -55,6 +69,23 @@
         else{
             document.querySelector('.mob').style.display = 'none';
         }
-   </script> 
+        var pas = prompt("비밀번호");
+        if(pas == 4885){
+            alert("잠금해제");
+            lock = 1;
+        }
+        else{
+            alert("제한됨")
+            lock = 0;
+        }
+        if(lock == 0){
+            document.querySelector('.jun').style.display = 'none';
+            document.querySelector('.bak').style.display = 'none';
+            document.querySelector('.ah').style.display = 'none';
+            document.querySelector('.dea').style.display = 'none';
+            document.querySelector('.ahh').style.display = 'none';
+            document.querySelector('.dee').style.display = 'none';
+        }
+   </script>
 </body>
 </html>

@@ -69,6 +69,13 @@
     text-decoration: underline 0px transparent;
     font-size: 40px;
     }
+.dea{
+    background: conic-gradient(rgb(255, 115, 0), rgb(0, 255, 221), rgb(255, 0, 255));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-decoration: underline 0px transparent;
+    font-size: 40px;
+    }
 .im{
     position: absolute;
     top: 130px;
@@ -129,5 +136,18 @@ __________________________________________mob
     top: 50px;
 }
 .ah:hover{
+    font-size: 40px;
+}
+.ahh{
+    color: red;
+    position: absolute;
+    left: 20px;
+    font-family: 'Song Myung', serif;
+    font-size: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    top: 50px;
+}
+.ahh:hover{
     font-size: 40px;
 }
